@@ -7,13 +7,14 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <script src="https://app.awesome-table.com/AwesomeTableInclude.js"></script>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="NewWat"
-  agent-id="60814fc8-6706-4bf5-b155-10072e20f1b2"
-  language-code="en"
-></df-messenger>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "580c3a00-a284-46bb-87cb-cf80c73a22d3",
+        apiHost: "https://flowise-1-cifd.onrender.com",
+    })
+</script>
+
   <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
